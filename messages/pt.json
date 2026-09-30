@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "title": "Lausen — OTC Corporativo BRL/USDT",
+    "description": "Mesa OTC corporativa para conversões BRL/USDT de alto volume. Liquidação em minutos, compliance robusto e atendimento dedicado. PSAV em processo de autorização pelo Banco Central (Res. BCB nº 520)."
+  },
+  "nav": {
+    "home": "Início",
+    "market": "Cotação",
+    "why": "Por que Lausen",
+    "how": "Como funciona",
+    "regulation": "Regulação",
+    "faq": "FAQ",
+    "contact": "Contato",
+    "login": "Entrar",
+    "cta": "Falar com especialista",
+    "menu": "Menu",
+    "close": "Fechar"
+  },
+  "hero": {
+    "eyebrow": "OTC Corporativo · BRL/USDT",
+    "titleLine1": "Câmbio digital",
+    "titleLine2": "para empresas que",
+    "titleHighlight": "movem volume.",
+    "subtitle": "A Lausen é uma instituição em processo de regulação pelo Banco Central do Brasil (Res. BCB nº 520), especializada em conversões corporativas de alto volume. Rápido. Seguro. Rastreável.",
+    "ctaPrimary": "Criar conta grátis",
+    "ctaSecondary": "Solicitar cotação",
+    "badge1": "Liquidação em < 5 min",
+    "badge2": "KYB em até 24h",
+    "badge3": "Sem taxa de manutenção",
+    "scroll": "Role para explorar",
+    "cardPair": "Dólar digital",
+    "cardOrder": "Ordem OTC",
+    "cardSettled": "Liquidada",
+    "cardKyb": "KYB verificado",
+    "cardKybSub": "Compliance aprovado",
+    "cardRails": "PIX · On-chain",
+    "cardRailsSub": "Trilhos de liquidação"
+  },
+  "marquee": [
+    "Liquidação instantânea",
+    "Mesa OTC dedicada",
+    "PSAV · Res. BCB nº 520",
+    "KYC/KYB completo",
+    "Rastreabilidade on-chain",
+    "Operação B2B",
+    "Spread competitivo",
+    "Atendimento humano"
+  ],
+  "stats": {
+    "eyebrow": "Em números",
+    "title": "Infraestrutura pensada para a tesouraria da sua empresa.",
+    "items": [
+      {
+        "value": 5,
+        "prefix": "< ",
+        "suffix": " min",
+        "label": "para liquidar uma operação após a cotação aprovada"
+      },
+      {
+        "value": 24,
+        "prefix": "",
+        "suffix": "h",
+        "label": "para concluir o onboarding corporativo com KYB/KYC"
+      },
+      {
+        "value": 0,
+        "prefix": "R$ ",
+        "suffix": "",
+        "label": "de taxa de manutenção na abertura da conta empresarial"
+      },
+      {
+        "value": 100,
+        "prefix": "",
+        "suffix": "%",
+        "label": "das operações com rastreabilidade ponta a ponta"
+      }
+    ]
+  },
+  "market": {
+    "eyebrow": "Mercado em tempo real",
+    "title": "Acompanhe o mercado ao vivo.",
+    "subtitle": "Cotações das principais criptomoedas em reais, atualizadas automaticamente. Para operações OTC, nossa mesa retorna spread e condições sob medida.",
+    "asset": "Ativo",
+    "price": "Preço",
+    "change": "24h",
+    "chart": "Gráfico",
+    "live": "Ao vivo",
+    "delayed": "Dados de referência",
+    "updated": "Atualizado",
+    "cta": "Solicitar cotação OTC",
+    "disclaimer": "Valores indicativos de mercado. A cotação OTC final é personalizada por volume e prazo.",
+    "featured": "Dólar digital",
+    "simTitle": "Simule sua conversão",
+    "simBuy": "Comprar USDT",
+    "simSell": "Vender USDT",
+    "simYouPay": "Você envia",
+    "simYouGet": "Você recebe (estimado)",
+    "simNote": "Estimativa com preço de mercado, sem spread. A mesa confirma a cotação final.",
+    "range": "Mín./máx. 24h"
+  },
+  "why": {
+    "eyebrow": "Por que Lausen",
+    "title": "Tudo que sua empresa precisa para operar com confiança.",
+    "subtitle": "Estrutura institucional, execução eficiente e gente de verdade do outro lado da mesa.",
+    "cards": [
+      {
+        "title": "Regulação BCB",
+        "desc": "Operamos sob a Resolução BCB nº 520 como PSAV em busca da autorização. Segurança jurídica para sua empresa."
+      },
+      {
+        "title": "Liquidação instantânea",
+        "desc": "Conversões executadas em menos de 5 minutos, com rastreabilidade completa por operação."
+      },
+      {
+        "title": "Atendimento dedicado",
+        "desc": "Mesa de câmbio exclusiva. Você fala com um especialista, não com um chatbot."
+      },
+      {
+        "title": "Compliance robusto",
+        "desc": "KYC/KYB completo, monitoramento de transações e relatórios para suas áreas fiscal e jurídica."
+      },
+      {
+        "title": "Operação B2B",
+        "desc": "Desenhada para empresas: importadores, exportadores, tesourarias e gestoras de ativos digitais."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Como funciona",
+    "title": "Um fluxo dedicado de operação OTC corporativa.",
+    "steps": [
+      {
+        "title": "Onboarding corporativo",
+        "desc": "Cadastro da empresa com KYB/KYC completo em até 24h. Sem burocracia desnecessária, com acompanhamento do nosso compliance."
+      },
+      {
+        "title": "Solicitação de cotação",
+        "desc": "Informe o volume desejado. Nossa mesa retorna com spread e condições em tempo real."
+      },
+      {
+        "title": "Confirmação e liquidação",
+        "desc": "Cotação aprovada, a operação é executada e liquidada em menos de 5 minutos, via PIX ou on-chain."
+      }
+    ],
+    "ticket": {
+      "title": "Cotação OTC",
+      "subtitle": "Mesa Lausen",
+      "pair": "Par",
+      "settlement": "Liquidação",
+      "validity": "Validade da cotação",
+      "s1": "Empresa verificada",
+      "s2": "Cotação aprovada",
+      "s3": "Operação liquidada"
+    }
+  },
+  "audience": {
+    "eyebrow": "Para quem",
+    "title": "Feita para quem opera em escala.",
+    "items": [
+      {
+        "title": "Importadores",
+        "desc": "Pague fornecedores internacionais com USDT e ganhe agilidade na cadeia de suprimentos."
+      },
+      {
+        "title": "Exportadores",
+        "desc": "Receba em dólar digital e converta para reais com previsibilidade e rapidez."
+      },
+      {
+        "title": "Tesourarias",
+        "desc": "Gestão de caixa em dólar digital, com proteção cambial e liquidez sob demanda."
+      },
+      {
+        "title": "Gestoras de ativos",
+        "desc": "Liquidez institucional para entrada e saída de posições em ativos digitais."
+      }
+    ]
+  },
+  "regulation": {
+    "eyebrow": "Regulação e segurança",
+    "title": "Segurança não é diferencial. É o ponto de partida.",
+    "subtitle": "A Lausen é um PSAV (Prestador de Serviços de Ativos Virtuais) em processo de regulação perante o Banco Central do Brasil, conforme a Resolução BCB nº 520.",
+    "items": [
+      {
+        "title": "PSAV · Res. BCB nº 520",
+        "desc": "Estrutura operacional e de governança alinhada ao novo marco regulatório."
+      },
+      {
+        "title": "KYC/KYB e PLD/FT",
+        "desc": "Análise de perfil, verificação PEP e sanções, e monitoramento contínuo de transações."
+      },
+      {
+        "title": "2FA obrigatório",
+        "desc": "Autenticação em dois fatores e PIN de confirmação para cada operação."
+      },
+      {
+        "title": "Titularidade e rastreio",
+        "desc": "Chave PIX e wallet de titularidade do próprio cliente, com trilha de auditoria completa."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Dúvidas frequentes",
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "O que é uma mesa OTC?",
+        "a": "OTC (over-the-counter) é a negociação direta entre as partes, fora do livro de ofertas de uma exchange. Para volumes altos, isso significa preço fechado, sem slippage e com atendimento de um especialista."
+      },
+      {
+        "q": "Quem pode operar com a Lausen?",
+        "a": "Empresas (PJ) e pessoas físicas (PF) que concluam nosso onboarding com KYB/KYC. Atendemos importadores, exportadores, tesourarias, gestoras e parceiros institucionais."
+      },
+      {
+        "q": "Quanto tempo leva o cadastro?",
+        "a": "O onboarding corporativo é concluído em até 24 horas úteis após o envio da documentação completa."
+      },
+      {
+        "q": "Como funciona a cotação?",
+        "a": "Você informa o volume e o sentido (compra ou venda de USDT). Nossa mesa retorna com o spread e as condições em tempo real. A cotação tem validade curta e, uma vez aprovada, é executada imediatamente."
+      },
+      {
+        "q": "Quais são os limites de operação?",
+        "a": "Os limites são definidos individualmente, de acordo com o perfil e a documentação da empresa. Operamos desde tickets menores até volumes acima de 1 milhão de USDT por mês."
+      },
+      {
+        "q": "Há custos para abrir a conta?",
+        "a": "Não. A abertura da conta empresarial é gratuita e não há taxa de manutenção. Você paga apenas o spread da operação."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Fale com a mesa",
+    "title": "Receba uma cotação com nossos especialistas.",
+    "subtitle": "Abertura de conta empresarial sem taxas de manutenção. Preencha os dados e fale direto com um operador da nossa mesa pelo WhatsApp.",
+    "whatsapp": "Prefere WhatsApp?",
+    "whatsappCta": "Chamar no WhatsApp",
+    "whatsappMessage": "Olá! Vim pelo site da Lausen e gostaria de uma cotação OTC.",
+    "phone": "Telefone",
+    "form": {
+      "fullName": "Nome completo",
+      "fullNamePh": "Seu nome",
+      "email": "E-mail corporativo",
+      "emailPh": "voce@empresa.com",
+      "whatsapp": "WhatsApp com DDD",
+      "whatsappPh": "(44) 99999-9999",
+      "country": "País",
+      "countryPh": "Brasil",
+      "city": "Cidade",
+      "cityPh": "São Paulo",
+      "company": "Empresa (opcional)",
+      "companyPh": "Nome da empresa",
+      "volume": "Volume médio mensal (USDT)",
+      "volumePh": "Selecione o volume",
+      "volumes": {
+        "lt10k": "Até 10 mil USDT",
+        "10k-100k": "10 mil – 100 mil USDT",
+        "100k-1m": "100 mil – 1 milhão USDT",
+        "gt1m": "Acima de 1 milhão USDT"
+      },
+      "operations": "Tipo de operação",
+      "operationTypes": {
+        "buy": "Compra de USDT",
+        "sell": "Venda de USDT",
+        "settlement": "Liquidação corporativa",
+        "partnership": "Parceria institucional / Liquidez"
+      },
+      "message": "Mensagem / objetivo do contato",
+      "messagePh": "Conte um pouco sobre sua operação",
+      "consent": "Concordo que meus dados sejam utilizados pela Lausen para fins de contato e atendimento, conforme a LGPD.",
+      "submit": "Enviar pelo WhatsApp",
+      "successTitle": "Quase lá!",
+      "successText": "Abrimos o WhatsApp da nossa mesa com seus dados preenchidos. É só enviar a mensagem para falar com um especialista.",
+      "again": "Preencher novamente",
+      "errors": {
+        "required": "Campo obrigatório",
+        "email": "E-mail inválido",
+        "phone": "Telefone inválido",
+        "operations": "Selecione ao menos um tipo de operação",
+        "consent": "É necessário aceitar para continuar"
+      },
+      "openWhatsapp": "Abrir WhatsApp"
+    }
+  },
+  "cta": {
+    "title": "Pronto para operar com uma mesa de verdade?",
+    "subtitle": "Crie sua conta empresarial gratuitamente e fale com nossos operadores hoje mesmo.",
+    "primary": "Criar conta grátis",
+    "secondary": "Falar com especialista"
+  },
+  "footer": {
+    "tagline": "Liquidez institucional para ativos digitais, com estrutura profissional e execução eficiente.",
+    "links": "Navegação",
+    "contact": "Contato",
+    "legal": "PSAV em processo de regulação perante o Banco Central do Brasil — Resolução BCB nº 520. Operações com ativos virtuais envolvem riscos. Cotações exibidas são indicativas.",
+    "company": "Lausen · CNPJ 59.509.598/0001-91 · Maringá, PR — Brasil",
+    "rights": "© {year} Lausen. Todos os direitos reservados."
+  }
+}

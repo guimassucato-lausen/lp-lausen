@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lausen — Landing Page
 
-## Getting Started
+Next.js 15 (App Router) · Tailwind v4 · GSAP/ScrollTrigger/SplitText · Lenis · Framer Motion · next-intl (PT/EN).
 
-First, run the development server:
+## Rodar
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
+npm install
+npm run dev                  # http://localhost:3000/pt e /en
+npm run build && npm start   # produção
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variáveis (.env.local / Vercel)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Var | Uso |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical, sitemap, OG |
+| `NEXT_PUBLIC_APP_URL` | Links "Entrar" / "Criar conta" (plataforma) |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | E-mail exibido no footer (vazio = oculto) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Leads
 
-## Learn More
+Por enquanto sem backend: o formulário valida os dados e abre o WhatsApp da mesa (`CONTACT.whatsapp` em `src/lib/site.ts`) com a mensagem preenchida. O envio dispara `generate_lead` (GTM/Ads) e `Lead` (Pixel), incluindo as UTMs da visita.
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `messages/pt.json`, `messages/en.json` — todo o texto do site
+- `src/components/sections/*` — seções da página
+- `src/components/motion/*` — smooth scroll, reveals, split de títulos, contadores, cursor, marquee
+- `src/lib/market.ts` + `src/app/api/market` — cotações (Brasil Bitcoin ticker24h, cache 30s, fallback)
+- `src/components/Tracking.tsx` — GTM, Google Ads, Meta Pixel (evento `generate_lead` / `Lead` no envio do formulário)

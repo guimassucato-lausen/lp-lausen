@@ -1,26 +1,252 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-brand: #6b46ff;
+  --color-brand-400: #8a6dff;
+  --color-brand-300: #a996ff;
+  --color-brand-700: #4f2fe0;
+  --color-navy: #0f1b2d;
+  --color-navy-800: #13213c;
+  --color-ink: #0a0d12;
+  --color-surface: #0f1115;
+  --color-surface-2: #151922;
+  --color-ice: #e8f6ff;
+  --color-mist: #a8b5cc;
+  --color-slate: #7f8aa0;
+  --color-up: #22c55e;
+  --color-down: #ef4444;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-14px) rotate(2deg); }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.45; transform: scale(0.85); }
   }
 }
 
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ink);
+  color: var(--color-ice);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-brand) 60%, transparent);
+  color: #fff;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@layer components {
+  .container-x {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-x { padding-inline: 2rem; }
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brand-300);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 1.5rem;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-brand-300));
+  }
+
+  .h-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+  }
+
+  .text-gradient,
+  .text-gradient * {
+    background: linear-gradient(100deg, #fff 0%, var(--color-brand-300) 45%, var(--color-brand) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .glass {
+    background: linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.02));
+    border: 1px solid rgb(232 246 255 / 0.09);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgb(232 246 255 / 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(232 246 255 / 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+
+  .grain::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 60;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* spotlight que segue o cursor (vars setadas via JS) */
+  .spotlight {
+    position: relative;
+    isolation: isolate;
+  }
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgb(107 70 255 / 0.22), transparent 45%);
+  }
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+
+}
+
+/* Estado inicial dos elementos animados — evita flash antes do GSAP */
+.js [data-reveal],
+.js [data-split] {
+  opacity: 0;
+}
+
+/* Visuais */
+@keyframes shield-scan {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(340px); }
+}
+@keyframes shield-check {
+  0%, 15% { stroke-dashoffset: 1; }
+  45%, 85% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 1; opacity: 0; }
+}
+@keyframes ticket-timer {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: 1; }
+}
+@keyframes ticket-step {
+  0%, 8% { color: var(--color-slate); }
+  15%, 85% { color: var(--color-ice); }
+  100% { color: var(--color-slate); }
+}
+@keyframes ticket-dot {
+  0%, 8% { background: transparent; border-color: rgb(255 255 255 / 0.15); color: transparent; }
+  15%, 85% { background: var(--color-brand); border-color: var(--color-brand); color: #fff; box-shadow: 0 0 16px rgb(107 70 255 / 0.7); }
+  100% { background: transparent; border-color: rgb(255 255 255 / 0.15); color: transparent; }
+}
+.ticket-step {
+  color: var(--color-slate);
+  animation: ticket-step 6s ease-in-out infinite both;
+}
+.ticket-dot {
+  color: transparent;
+  animation: ticket-dot 6s ease-in-out infinite both;
+  animation-delay: inherit;
+}
+
+/* Entrada do hero em CSS puro: começa no primeiro paint, sem esperar hidratação (LCP) */
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes hero-word {
+  from { transform: translateY(110%) rotate(4deg); }
+  to { transform: none; }
+}
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(24px) scale(0.9); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes orb-in {
+  from { opacity: 0; scale: 0.4; }
+  to { opacity: 1; scale: 1; }
+}
+[data-hero-in] {
+  animation: hero-in 1.2s var(--ease-out-expo) both;
+}
+.hero-word {
+  animation: hero-word 1.2s var(--ease-out-expo) both;
+}
+.card-in {
+  animation: card-in 1.4s var(--ease-out-expo) both;
+}
+.hero-orb {
+  animation: orb-in 2.2s var(--ease-out-expo) both;
+}
+.split-line {
+  padding-bottom: 0.08em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .js [data-reveal],
+  .js [data-split] {
+    opacity: 1;
+  }
 }

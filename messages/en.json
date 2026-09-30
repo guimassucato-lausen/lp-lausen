@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "title": "Lausen — Corporate OTC Desk BRL/USDT",
+    "description": "Corporate OTC desk for high-volume BRL/USDT conversions. Settlement in minutes, robust compliance and dedicated service. VASP in the authorization process with the Central Bank of Brazil (BCB Resolution No. 520)."
+  },
+  "nav": {
+    "home": "Home",
+    "market": "Market",
+    "why": "Why Lausen",
+    "how": "How it works",
+    "regulation": "Regulation",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Log in",
+    "cta": "Talk to a specialist",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "eyebrow": "Corporate OTC · BRL/USDT",
+    "titleLine1": "Digital FX",
+    "titleLine2": "for companies that",
+    "titleHighlight": "move volume.",
+    "subtitle": "Lausen is an institution in the regulatory process with the Central Bank of Brazil (BCB Resolution No. 520), specialized in high-volume corporate conversions. Fast. Secure. Traceable.",
+    "ctaPrimary": "Open a free account",
+    "ctaSecondary": "Request a quote",
+    "badge1": "Settlement in < 5 min",
+    "badge2": "KYB within 24h",
+    "badge3": "No maintenance fees",
+    "scroll": "Scroll to explore",
+    "cardPair": "Digital dollar",
+    "cardOrder": "OTC order",
+    "cardSettled": "Settled",
+    "cardKyb": "KYB verified",
+    "cardKybSub": "Compliance approved",
+    "cardRails": "PIX · On-chain",
+    "cardRailsSub": "Settlement rails"
+  },
+  "marquee": [
+    "Instant settlement",
+    "Dedicated OTC desk",
+    "VASP · BCB Res. No. 520",
+    "Full KYC/KYB",
+    "On-chain traceability",
+    "B2B operations",
+    "Competitive spreads",
+    "Human service"
+  ],
+  "stats": {
+    "eyebrow": "By the numbers",
+    "title": "Infrastructure built for your company's treasury.",
+    "items": [
+      {
+        "value": 5,
+        "prefix": "< ",
+        "suffix": " min",
+        "label": "to settle a trade once the quote is approved"
+      },
+      {
+        "value": 24,
+        "prefix": "",
+        "suffix": "h",
+        "label": "to complete corporate onboarding with KYB/KYC"
+      },
+      {
+        "value": 0,
+        "prefix": "R$ ",
+        "suffix": "",
+        "label": "in maintenance fees to open a business account"
+      },
+      {
+        "value": 100,
+        "prefix": "",
+        "suffix": "%",
+        "label": "of trades with end-to-end traceability"
+      }
+    ]
+  },
+  "market": {
+    "eyebrow": "Live market",
+    "title": "Follow the market in real time.",
+    "subtitle": "Prices of the main cryptocurrencies in Brazilian reais, updated automatically. For OTC trades, our desk returns a tailored spread and terms.",
+    "asset": "Asset",
+    "price": "Price",
+    "change": "24h",
+    "chart": "Chart",
+    "live": "Live",
+    "delayed": "Reference data",
+    "updated": "Updated",
+    "cta": "Request an OTC quote",
+    "disclaimer": "Indicative market prices. The final OTC quote is tailored to volume and timing.",
+    "featured": "Digital dollar",
+    "simTitle": "Simulate your conversion",
+    "simBuy": "Buy USDT",
+    "simSell": "Sell USDT",
+    "simYouPay": "You send",
+    "simYouGet": "You receive (estimated)",
+    "simNote": "Estimate at market price, without spread. The desk confirms the final quote.",
+    "range": "24h low/high"
+  },
+  "why": {
+    "eyebrow": "Why Lausen",
+    "title": "Everything your company needs to trade with confidence.",
+    "subtitle": "Institutional structure, efficient execution and real people on the other side of the desk.",
+    "cards": [
+      {
+        "title": "BCB regulation",
+        "desc": "We operate under BCB Resolution No. 520 as a VASP seeking authorization. Legal certainty for your company."
+      },
+      {
+        "title": "Instant settlement",
+        "desc": "Conversions executed in under 5 minutes, with full traceability for every trade."
+      },
+      {
+        "title": "Dedicated service",
+        "desc": "An exclusive FX desk. You talk to a specialist, not a chatbot."
+      },
+      {
+        "title": "Robust compliance",
+        "desc": "Full KYC/KYB, transaction monitoring and reports for your tax and legal teams."
+      },
+      {
+        "title": "B2B operations",
+        "desc": "Designed for businesses: importers, exporters, treasuries and digital asset managers."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "A dedicated corporate OTC workflow.",
+    "steps": [
+      {
+        "title": "Corporate onboarding",
+        "desc": "Company registration with full KYB/KYC within 24h. No unnecessary red tape, with support from our compliance team."
+      },
+      {
+        "title": "Quote request",
+        "desc": "Tell us the volume you need. Our desk comes back with the spread and terms in real time."
+      },
+      {
+        "title": "Confirmation and settlement",
+        "desc": "Once the quote is approved, the trade is executed and settled in under 5 minutes, via PIX or on-chain."
+      }
+    ],
+    "ticket": {
+      "title": "OTC quote",
+      "subtitle": "Lausen desk",
+      "pair": "Pair",
+      "settlement": "Settlement",
+      "validity": "Quote validity",
+      "s1": "Company verified",
+      "s2": "Quote approved",
+      "s3": "Trade settled"
+    }
+  },
+  "audience": {
+    "eyebrow": "Who it's for",
+    "title": "Built for companies operating at scale.",
+    "items": [
+      {
+        "title": "Importers",
+        "desc": "Pay international suppliers in USDT and speed up your supply chain."
+      },
+      {
+        "title": "Exporters",
+        "desc": "Receive in digital dollars and convert to reais quickly and predictably."
+      },
+      {
+        "title": "Treasuries",
+        "desc": "Cash management in digital dollars, with FX protection and on-demand liquidity."
+      },
+      {
+        "title": "Asset managers",
+        "desc": "Institutional liquidity to enter and exit digital asset positions."
+      }
+    ]
+  },
+  "regulation": {
+    "eyebrow": "Regulation and security",
+    "title": "Security isn't a differentiator. It's the starting point.",
+    "subtitle": "Lausen is a VASP (Virtual Asset Service Provider) in the regulatory process with the Central Bank of Brazil, under BCB Resolution No. 520.",
+    "items": [
+      {
+        "title": "VASP · BCB Res. No. 520",
+        "desc": "Operational and governance structure aligned with the new regulatory framework."
+      },
+      {
+        "title": "KYC/KYB and AML/CFT",
+        "desc": "Profile analysis, PEP and sanctions screening, and continuous transaction monitoring."
+      },
+      {
+        "title": "Mandatory 2FA",
+        "desc": "Two-factor authentication and a confirmation PIN for every transaction."
+      },
+      {
+        "title": "Ownership and tracking",
+        "desc": "PIX key and wallet owned by the client, with a complete audit trail."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What is an OTC desk?",
+        "a": "OTC (over-the-counter) means trading directly between parties, outside an exchange's order book. For large volumes, that means a locked price, no slippage and a specialist handling your trade."
+      },
+      {
+        "q": "Who can trade with Lausen?",
+        "a": "Companies and individuals who complete our KYB/KYC onboarding. We serve importers, exporters, treasuries, asset managers and institutional partners."
+      },
+      {
+        "q": "How long does onboarding take?",
+        "a": "Corporate onboarding is completed within 24 business hours after the full documentation is submitted."
+      },
+      {
+        "q": "How does the quote work?",
+        "a": "You tell us the volume and side (buy or sell USDT). Our desk returns the spread and terms in real time. Quotes are valid for a short window and, once approved, are executed immediately."
+      },
+      {
+        "q": "What are the trading limits?",
+        "a": "Limits are set individually, based on each company's profile and documentation. We handle everything from smaller tickets to volumes above 1 million USDT per month."
+      },
+      {
+        "q": "Are there fees to open an account?",
+        "a": "No. Opening a business account is free and there are no maintenance fees. You only pay the trade spread."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Talk to the desk",
+    "title": "Get a quote from our specialists.",
+    "subtitle": "Business accounts with no maintenance fees. Fill in your details and talk directly to one of our traders on WhatsApp.",
+    "whatsapp": "Prefer WhatsApp?",
+    "whatsappCta": "Message us on WhatsApp",
+    "whatsappMessage": "Hi! I found Lausen's website and would like an OTC quote.",
+    "phone": "Phone",
+    "form": {
+      "fullName": "Full name",
+      "fullNamePh": "Your name",
+      "email": "Business email",
+      "emailPh": "you@company.com",
+      "whatsapp": "WhatsApp number",
+      "whatsappPh": "+55 44 99999-9999",
+      "country": "Country",
+      "countryPh": "Brazil",
+      "city": "City",
+      "cityPh": "São Paulo",
+      "company": "Company (optional)",
+      "companyPh": "Company name",
+      "volume": "Average monthly volume (USDT)",
+      "volumePh": "Select a range",
+      "volumes": {
+        "lt10k": "Up to 10k USDT",
+        "10k-100k": "10k – 100k USDT",
+        "100k-1m": "100k – 1M USDT",
+        "gt1m": "Above 1M USDT"
+      },
+      "operations": "Type of operation",
+      "operationTypes": {
+        "buy": "Buy USDT",
+        "sell": "Sell USDT",
+        "settlement": "Corporate settlement",
+        "partnership": "Institutional partnership / Liquidity"
+      },
+      "message": "Message / purpose of contact",
+      "messagePh": "Tell us a bit about your operation",
+      "consent": "I agree that Lausen may use my data to contact me and provide service, in accordance with Brazil's LGPD.",
+      "submit": "Send via WhatsApp",
+      "successTitle": "Almost there!",
+      "successText": "We opened our desk’s WhatsApp with your details filled in. Just send the message to talk to a specialist.",
+      "again": "Fill in again",
+      "errors": {
+        "required": "Required field",
+        "email": "Invalid email",
+        "phone": "Invalid phone number",
+        "operations": "Select at least one type of operation",
+        "consent": "You must accept to continue"
+      },
+      "openWhatsapp": "Open WhatsApp"
+    }
+  },
+  "cta": {
+    "title": "Ready to trade with a real desk?",
+    "subtitle": "Open your business account for free and talk to our traders today.",
+    "primary": "Open a free account",
+    "secondary": "Talk to a specialist"
+  },
+  "footer": {
+    "tagline": "Institutional liquidity for digital assets, with professional structure and efficient execution.",
+    "links": "Navigation",
+    "contact": "Contact",
+    "legal": "VASP in the regulatory process with the Central Bank of Brazil — BCB Resolution No. 520. Trading virtual assets involves risk. Prices shown are indicative.",
+    "company": "Lausen · CNPJ 59.509.598/0001-91 · Maringá, PR — Brazil",
+    "rights": "© {year} Lausen. All rights reserved."
+  }
+}
