@@ -15,8 +15,8 @@ export function QuoteTicket() {
   const steps = [t("s1"), t("s2"), t("s3")];
 
   return (
-    <div className="glass relative w-full max-w-sm overflow-hidden rounded-[1.75rem] p-6 shadow-[0_30px_80px_-30px_rgb(107_70_255/0.6)]">
-      <div className="pointer-events-none absolute -right-16 -top-16 size-48 rounded-full bg-brand/30 blur-3xl" />
+    <div className="glass relative w-full max-w-sm overflow-hidden rounded-[1.75rem] p-6 shadow-[0_30px_80px_-30px_rgb(45_0_165/0.8)]">
+      <div className="pointer-events-none absolute -right-16 -top-16 size-48 rounded-full bg-brand/55 blur-3xl" />
       <div className="relative flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="flex -space-x-2">
@@ -38,7 +38,7 @@ export function QuoteTicket() {
             cy="18"
             r="15"
             fill="none"
-            stroke="#8a6dff"
+            stroke="#f5e9a3"
             strokeWidth="3"
             strokeLinecap="round"
             pathLength={1}

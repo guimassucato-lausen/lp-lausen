@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 
 const field =
-  "peer w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-[0.95rem] text-ice placeholder:text-slate outline-none transition-[border-color,background-color,box-shadow] duration-300 hover:border-white/20 focus:border-brand focus:bg-brand/[0.05] focus:shadow-[0_0_0_4px_rgb(107_70_255/0.15)] aria-[invalid=true]:border-down/70";
+  "peer w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-[0.95rem] text-ice placeholder:text-slate outline-none transition-[border-color,background-color,box-shadow] duration-300 hover:border-white/20 focus:border-brand-300 focus:bg-brand/50 focus:shadow-[0_0_0_4px_rgb(183_193_247/0.18)] aria-[invalid=true]:border-down/70";
 
 function Field({
   label,
@@ -144,7 +144,7 @@ export function Contact() {
         </div>
 
         <div data-reveal="up" className="glass relative overflow-hidden rounded-[2rem] p-6 md:p-10">
-          <div className="pointer-events-none absolute -left-32 -top-32 size-80 rounded-full bg-brand/20 blur-3xl" />
+          <div className="pointer-events-none absolute -left-32 -top-32 size-80 rounded-full bg-brand/50 blur-3xl" />
 
           <AnimatePresence mode="wait">
             {status === "success" ? (
@@ -240,11 +240,11 @@ export function Contact() {
                               className={cn(
                                 "inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm transition-all duration-300",
                                 on
-                                  ? "border-brand bg-brand/20 text-white shadow-[0_0_24px_-6px_rgb(107_70_255/0.8)]"
+                                  ? "border-brand-300/60 bg-brand/50 text-white shadow-[0_0_24px_-6px_rgb(183_193_247/0.45)]"
                                   : "border-white/10 text-mist hover:border-white/25 hover:text-ice",
                               )}
                             >
-                              <span className={cn("grid size-4 place-items-center rounded-full border transition-all", on ? "border-brand bg-brand" : "border-white/30")}>
+                              <span className={cn("grid size-4 place-items-center rounded-full border transition-all", on ? "border-brand-300 bg-brand" : "border-white/30")}>
                                 {on && <Check className="size-3" strokeWidth={3} />}
                               </span>
                               {tf(`operationTypes.${op}`)}
@@ -266,7 +266,7 @@ export function Contact() {
 
                 <label className="flex cursor-pointer items-start gap-3 sm:col-span-2">
                   <input type="checkbox" {...register("consent")} className="peer sr-only" />
-                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-md border border-white/25 transition-all peer-checked:border-brand peer-checked:bg-brand peer-focus-visible:ring-2 peer-focus-visible:ring-brand-300 [&>svg]:opacity-0 peer-checked:[&>svg]:opacity-100">
+                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-md border border-white/25 transition-all peer-checked:border-brand-300 peer-checked:bg-brand peer-focus-visible:ring-2 peer-focus-visible:ring-brand-300 [&>svg]:opacity-0 peer-checked:[&>svg]:opacity-100">
                     <Check className="size-3.5 text-white" strokeWidth={3} />
                   </span>
                   <span className="text-sm leading-relaxed text-mist">

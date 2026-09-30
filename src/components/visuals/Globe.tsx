@@ -128,15 +128,15 @@ export function Globe({ className }: { className?: string }) {
 
       // halo
       const halo = ctx.createRadialGradient(cx, cy, R * 0.6, cx, cy, R * 1.25);
-      halo.addColorStop(0, "rgba(107,70,255,0.10)");
-      halo.addColorStop(1, "rgba(107,70,255,0)");
+      halo.addColorStop(0, "rgba(45,0,165,0.35)");
+      halo.addColorStop(1, "rgba(45,0,165,0)");
       ctx.fillStyle = halo;
       ctx.fillRect(0, 0, w, h);
 
       // borda
       ctx.beginPath();
       ctx.arc(cx, cy, R, 0, Math.PI * 2);
-      ctx.strokeStyle = "rgba(169,150,255,0.18)";
+      ctx.strokeStyle = "rgba(183,193,247,0.2)";
       ctx.lineWidth = 1;
       ctx.stroke();
 
@@ -145,7 +145,7 @@ export function Globe({ className }: { className?: string }) {
         const [x, y, z] = project(rotate(d, spin));
         if (z < -0.15) continue;
         const a = z < 0 ? 0.08 : 0.22 + z * 0.6;
-        ctx.fillStyle = `rgba(200,210,255,${a})`;
+        ctx.fillStyle = `rgba(198,229,255,${a})`;
         const s = 0.9 + Math.max(0, z) * 1.2;
         ctx.fillRect(x - s / 2, y - s / 2, s, s);
       }
@@ -166,7 +166,7 @@ export function Globe({ className }: { className?: string }) {
             started = true;
           } else ctx.lineTo(x, y);
         }
-        ctx.strokeStyle = "rgba(138,109,255,0.45)";
+        ctx.strokeStyle = "rgba(183,193,247,0.42)";
         ctx.lineWidth = 1;
         ctx.stroke();
 
@@ -182,7 +182,7 @@ export function Globe({ className }: { className?: string }) {
           ctx.beginPath();
           ctx.moveTo(x1, y1);
           ctx.lineTo(x2, y2);
-          ctx.strokeStyle = `rgba(232,246,255,${k * 0.95})`;
+          ctx.strokeStyle = `rgba(255,247,213,${k * 0.95})`;
           ctx.lineWidth = 1 + k * 1.4;
           ctx.stroke();
         }
@@ -192,7 +192,7 @@ export function Globe({ className }: { className?: string }) {
         if (ez > 0) {
           ctx.beginPath();
           ctx.arc(ex, ey, 2.2, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(169,150,255,0.9)";
+          ctx.fillStyle = "rgba(245,233,163,0.9)";
           ctx.fill();
         }
       }
@@ -203,12 +203,12 @@ export function Globe({ className }: { className?: string }) {
         const pulse = reduced ? 0.5 : (t % 2) / 2;
         ctx.beginPath();
         ctx.arc(hx, hy, 4 + pulse * 16, 0, Math.PI * 2);
-        ctx.strokeStyle = `rgba(34,197,94,${0.6 * (1 - pulse)})`;
+        ctx.strokeStyle = `rgba(245,233,163,${0.7 * (1 - pulse)})`;
         ctx.lineWidth = 1.5;
         ctx.stroke();
         ctx.beginPath();
         ctx.arc(hx, hy, 3.5, 0, Math.PI * 2);
-        ctx.fillStyle = "#22c55e";
+        ctx.fillStyle = "#f5e9a3";
         ctx.fill();
       }
 

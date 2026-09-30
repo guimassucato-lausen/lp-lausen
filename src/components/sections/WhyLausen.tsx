@@ -63,7 +63,7 @@ export function WhyLausen() {
       <div className="container-x relative">
         <SectionHeader eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} className="lg:[&_h2]:text-5xl" />
         <div className="mt-8 hidden h-px w-full max-w-xs overflow-hidden bg-white/10 lg:block">
-          <div data-why-progress className="h-full origin-left scale-x-0 bg-gradient-to-r from-brand to-brand-300" />
+          <div data-why-progress className="h-full origin-left scale-x-0 bg-gradient-to-r from-brand-300 to-gold" />
         </div>
       </div>
 
@@ -78,9 +78,9 @@ export function WhyLausen() {
               key={c.title}
               data-reveal="up"
               data-delay={(i % 2) * 0.08}
-              className="glass group flex min-h-[240px] shrink-0 flex-col rounded-[2rem] p-7 transition-[border-color] duration-500 hover:border-brand/40 lg:min-h-[320px] lg:w-[380px] lg:p-9 xl:w-[420px] [@media(min-height:900px)]:lg:min-h-[380px]"
+              className="glass group flex min-h-[240px] shrink-0 flex-col rounded-[2rem] p-7 transition-[border-color] duration-500 hover:border-brand-300/35 lg:min-h-[320px] lg:w-[380px] lg:p-9 xl:w-[420px] [@media(min-height:900px)]:lg:min-h-[380px]"
             >
-              <span className="grid size-14 place-items-center rounded-2xl bg-brand/15 text-brand-300 ring-1 ring-brand/25 transition-all duration-500 group-hover:rotate-[-8deg] group-hover:scale-110 group-hover:bg-brand group-hover:text-white">
+              <span className="grid size-14 place-items-center rounded-2xl bg-brand/45 text-brand-300 ring-1 ring-brand-300/20 transition-all duration-500 group-hover:rotate-[-8deg] group-hover:scale-110 group-hover:bg-brand group-hover:text-white">
                   <Icon className="size-6" strokeWidth={1.7} />
               </span>
               <h3 className="h-display mt-auto pt-12 text-2xl text-ice md:text-3xl">{c.title}</h3>

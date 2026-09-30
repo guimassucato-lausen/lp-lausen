@@ -5,21 +5,21 @@ import { cn } from "@/lib/cn";
 export function Orbits({ className }: { className?: string }) {
   return (
     <div aria-hidden className={cn("relative aspect-square", className)}>
-      <div className="absolute inset-[30%] rounded-full bg-brand/30 blur-3xl" />
+      <div className="absolute inset-[30%] rounded-full bg-brand/55 blur-3xl" />
       <svg viewBox="0 0 400 400" className="absolute inset-0 size-full">
         <defs>
           <linearGradient id="orb-g" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#a996ff" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="#6b46ff" stopOpacity="0" />
+            <stop offset="0%" stopColor="#f5e9a3" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#b7c1f7" stopOpacity="0" />
           </linearGradient>
         </defs>
         <circle cx="200" cy="200" r="190" fill="none" stroke="rgb(232 246 255 / 0.08)" strokeDasharray="2 8" />
         <circle cx="200" cy="200" r="140" fill="none" stroke="rgb(232 246 255 / 0.1)" />
-        <circle cx="200" cy="200" r="90" fill="none" stroke="rgb(169 150 255 / 0.25)" strokeDasharray="4 6" />
+        <circle cx="200" cy="200" r="90" fill="none" stroke="rgb(183 193 247 / 0.28)" strokeDasharray="4 6" />
         <g className="origin-center animate-[spin_18s_linear_infinite]" style={{ transformBox: "fill-box" }}>
           <circle cx="200" cy="200" r="140" fill="none" stroke="url(#orb-g)" strokeWidth="2" strokeDasharray="220 660" strokeLinecap="round" />
         </g>
-        <circle cx="200" cy="200" r="36" fill="rgb(107 70 255 / 0.25)" stroke="rgb(169 150 255 / 0.5)" />
+        <circle cx="200" cy="200" r="36" fill="rgb(45 0 165 / 0.55)" stroke="rgb(183 193 247 / 0.5)" />
       </svg>
       {/* moedas em órbita */}
       <div className="absolute inset-[2.5%] animate-[spin_40s_linear_infinite]">

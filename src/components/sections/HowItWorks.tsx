@@ -66,14 +66,14 @@ export function HowItWorks() {
 
         <div data-steps className="relative">
           <div aria-hidden className="absolute bottom-8 left-[27px] top-8 w-px bg-white/10 md:left-[31px]">
-            <div data-line className="h-full w-full origin-top bg-gradient-to-b from-brand-300 via-brand to-brand-700 shadow-[0_0_16px_rgb(107_70_255/0.8)]" />
+            <div data-line className="h-full w-full origin-top bg-gradient-to-b from-gold via-brand-300 to-brand shadow-[0_0_16px_rgb(183_193_247/0.45)]" />
           </div>
           <ol className="relative">
           {how.steps.map((s, i) => {
             const Icon = ICONS[i];
             return (
               <li key={s.title} data-step className="group relative flex gap-6 pb-16 last:pb-0 md:gap-8 md:pb-24">
-                <span className="relative z-10 grid size-14 shrink-0 place-items-center rounded-2xl border border-white/10 bg-surface-2 text-mist transition-all duration-700 group-[.is-active]:border-brand group-[.is-active]:bg-brand group-[.is-active]:text-white group-[.is-active]:shadow-[0_0_40px_rgb(107_70_255/0.6)] md:size-16">
+                <span className="relative z-10 grid size-14 shrink-0 place-items-center rounded-2xl border border-white/10 bg-surface-2 text-mist transition-all duration-700 group-[.is-active]:border-brand-300/60 group-[.is-active]:bg-brand group-[.is-active]:text-white group-[.is-active]:shadow-[0_0_40px_rgb(45_0_165/0.8)] md:size-16">
                   <Icon className="size-6" strokeWidth={1.7} />
                 </span>
                 <div data-step-body className="pt-2">

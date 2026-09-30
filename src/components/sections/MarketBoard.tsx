@@ -147,7 +147,7 @@ function Simulator({ usdt }: { usdt: Ticker }) {
       </div>
 
       <div className="mt-4 grid gap-2">
-        <label className="flex items-center justify-between rounded-2xl bg-white/[0.04] px-4 py-3 ring-1 ring-white/[0.06] focus-within:ring-brand/60">
+        <label className="flex items-center justify-between rounded-2xl bg-white/[0.04] px-4 py-3 ring-1 ring-white/[0.06] focus-within:ring-brand-300/50">
           <span className="text-xs text-mist">{t("simYouPay")}</span>
           <span className="flex items-center gap-2">
             <input
@@ -166,7 +166,7 @@ function Simulator({ usdt }: { usdt: Ticker }) {
         <div className="relative z-10 -my-4 mx-auto grid size-8 place-items-center rounded-full bg-surface-2 ring-1 ring-white/10">
           <ArrowDownUp className="size-3.5 text-brand-300" />
         </div>
-        <div className="flex items-center justify-between rounded-2xl bg-brand/[0.08] px-4 py-3 ring-1 ring-brand/20">
+        <div className="flex items-center justify-between rounded-2xl bg-brand/55 px-4 py-3 ring-1 ring-brand-300/20">
           <span className="text-xs text-mist">{t("simYouGet")}</span>
           <span className="flex items-center gap-2">
             <span className="font-display text-lg font-semibold tabular-nums text-ice">{nf.format(result)}</span>
@@ -195,7 +195,7 @@ export function MarketBoard({ initial }: { initial: MarketPayload }) {
     <div className="mt-14 grid gap-5 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
       {/* destaque USDT/BRL + simulador */}
       <div data-reveal="left" className="glass spotlight relative overflow-hidden rounded-[2rem] p-6 md:p-8">
-        <div className="pointer-events-none absolute -right-20 -top-20 size-64 rounded-full bg-brand/30 blur-3xl" />
+        <div className="pointer-events-none absolute -right-20 -top-20 size-64 rounded-full bg-brand/55 blur-3xl" />
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <CoinIcon symbol={usdt.symbol} size={44} className="shadow-[0_0_24px_rgb(38_161_123/0.45)]" />

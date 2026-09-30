@@ -72,7 +72,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
                     onClick={() => setOpen(false)}
                     className={cn(
                       "flex items-center justify-between gap-4 rounded-xl px-3 py-2.5 text-sm transition-colors",
-                      active ? "bg-brand/15 text-white" : "text-mist hover:bg-white/5 hover:text-white",
+                      active ? "bg-brand/45 text-white" : "text-mist hover:bg-white/5 hover:text-white",
                     )}
                   >
                     <span className="flex items-center gap-3">

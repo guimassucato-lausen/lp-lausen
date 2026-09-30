@@ -38,7 +38,7 @@ export function Stats() {
                     value={s.value}
                     prefix={s.prefix}
                     suffix={s.suffix}
-                    className="h-display block text-4xl tabular-nums text-ice transition-colors group-hover:text-brand-300 md:text-6xl"
+                    className="h-display block text-4xl tabular-nums text-ice transition-colors group-hover:text-gold md:text-6xl"
                   />
                   <p className="mt-3 text-sm leading-relaxed text-mist">{s.label}</p>
                 </dd>

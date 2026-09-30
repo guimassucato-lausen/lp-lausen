@@ -61,7 +61,7 @@ export function Hero() {
       depth: 1.6,
       body: (
         <div className="flex items-center gap-3">
-          <span className="grid size-9 place-items-center rounded-xl bg-brand/20 text-brand-300">
+          <span className="grid size-9 place-items-center rounded-xl bg-brand/50 text-brand-300">
             <BadgeCheck className="size-5" />
           </span>
           <div>
@@ -135,8 +135,8 @@ export function Hero() {
     >
       {/* fundo */}
       <div className="bg-grid pointer-events-none absolute inset-0" />
-      <div className="hero-orb pointer-events-none absolute left-1/2 top-[38%] size-[70vmax] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgb(107_70_255/0.3),transparent_60%)] blur-2xl" />
-      <div className="hero-orb pointer-events-none absolute -bottom-1/3 left-[15%] size-[45vmax] rounded-full bg-[radial-gradient(circle,rgb(46_120_255/0.2),transparent_60%)] blur-3xl" />
+      <div className="hero-orb pointer-events-none absolute left-1/2 top-[38%] size-[70vmax] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgb(45_0_165/0.6),transparent_60%)] blur-2xl" />
+      <div className="hero-orb pointer-events-none absolute -bottom-1/3 left-[15%] size-[45vmax] rounded-full bg-[radial-gradient(circle,rgb(198_229_255/0.12),transparent_60%)] blur-3xl" />
 
       {/* globo com rotas de liquidação */}
       <div

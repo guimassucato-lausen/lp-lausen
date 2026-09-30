@@ -63,7 +63,7 @@ export function Footer() {
       {/* wordmark gigante */}
       <p
         aria-hidden
-        className="h-display pointer-events-none select-none bg-gradient-to-b from-white/[0.07] to-transparent bg-clip-text text-center text-[26vw] leading-[0.75] text-transparent"
+        className="h-display pointer-events-none select-none bg-gradient-to-b from-linen/[0.08] to-transparent bg-clip-text text-center text-[26vw] leading-[0.75] text-transparent"
       >
         lausen
       </p>

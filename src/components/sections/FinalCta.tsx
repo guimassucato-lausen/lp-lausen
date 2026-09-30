@@ -50,7 +50,7 @@ export function FinalCta() {
       <div className="container-x">
         <div
           data-cta-card
-          className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-brand via-brand-700 to-navy px-6 py-20 text-center md:px-16 md:py-28"
+          className="relative overflow-hidden rounded-[2.5rem] bg-[radial-gradient(circle_at_85%_10%,rgb(255_247_213/0.12),transparent_38%),radial-gradient(circle_at_8%_100%,rgb(183_193_247/0.18),transparent_45%),linear-gradient(135deg,#2d00a5_0%,#1c2339_62%,#0a112b_100%)] px-6 py-20 text-center ring-1 ring-inset ring-brand-300/15 md:px-16 md:py-28"
         >
           <div className="bg-grid pointer-events-none absolute inset-0 opacity-60" />
           {BUBBLES.map((b) => (
@@ -66,7 +66,7 @@ export function FinalCta() {
 
           <div className="relative mx-auto max-w-3xl">
             <SplitHeading className="h-display text-4xl text-white md:text-6xl">{t("title")}</SplitHeading>
-            <p data-reveal className="mx-auto mt-6 max-w-xl text-lg text-white/80">
+            <p data-reveal className="mx-auto mt-6 max-w-xl text-lg text-frost/85">
               {t("subtitle")}
             </p>
             <div data-reveal data-delay="0.1" className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">

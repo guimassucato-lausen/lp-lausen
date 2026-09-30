@@ -20,9 +20,9 @@ const base =
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-brand text-white shadow-[0_10px_40px_-8px_rgb(107_70_255/0.7),inset_0_1px_0_rgb(255_255_255/0.25)] hover:shadow-[0_14px_60px_-6px_rgb(107_70_255/0.9),inset_0_1px_0_rgb(255_255_255/0.3)] hover:-translate-y-0.5",
+    "bg-brand text-white ring-1 ring-inset ring-brand-300/30 shadow-[0_10px_40px_-8px_rgb(45_0_165/0.9),inset_0_1px_0_rgb(255_255_255/0.2)] hover:bg-[color-mix(in_srgb,var(--color-brand)_82%,var(--color-brand-300))] hover:shadow-[0_14px_60px_-6px_rgb(45_0_165/1),inset_0_1px_0_rgb(255_255_255/0.3)] hover:-translate-y-0.5",
   ghost: "glass text-ice hover:bg-white/10 hover:-translate-y-0.5",
-  light: "bg-ice text-navy hover:bg-white hover:-translate-y-0.5 shadow-[0_10px_40px_-10px_rgb(232_246_255/0.5)]",
+  light: "bg-pearl text-navy hover:bg-cream hover:-translate-y-0.5 shadow-[0_10px_40px_-10px_rgb(255_247_213/0.45)]",
 };
 
 const sizes: Record<Size, string> = {

@@ -9,7 +9,7 @@ export function Marquee({ items, duration = 40, reverse, className }: Props) {
       {items.map((item, i) => (
         <li key={i} className="flex shrink-0 items-center gap-12">
           {item}
-          <span className="size-1.5 rounded-full bg-brand/70" />
+          <span className="size-1.5 rounded-full bg-gold/70" />
         </li>
       ))}
     </ul>

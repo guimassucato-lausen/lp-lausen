@@ -33,13 +33,13 @@ export function Audience() {
                 className={cn(
                   "group relative flex cursor-default flex-col overflow-hidden rounded-[2rem] border p-7 outline-none transition-[flex-grow,background-color,border-color] duration-700 ease-out-expo lg:p-9",
                   on
-                    ? "border-brand/40 bg-gradient-to-br from-brand/30 via-brand/10 to-transparent lg:flex-[2.4]"
+                    ? "border-brand-300/40 bg-gradient-to-br from-brand/65 via-brand/25 to-transparent lg:flex-[2.4]"
                     : "border-white/[0.07] bg-white/[0.02] lg:flex-1",
                 )}
               >
                 <div
                   className={cn(
-                    "pointer-events-none absolute -bottom-24 -right-24 size-72 rounded-full bg-brand/40 blur-3xl transition-opacity duration-700",
+                    "pointer-events-none absolute -bottom-24 -right-24 size-72 rounded-full bg-brand/60 blur-3xl transition-opacity duration-700",
                     on ? "opacity-100" : "opacity-0",
                   )}
                 />

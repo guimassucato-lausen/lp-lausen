@@ -14,7 +14,7 @@ export function ScrollProgress() {
   });
   return (
     <div aria-hidden className="fixed inset-x-0 top-0 z-[60] h-[2px]">
-      <div ref={bar} className="h-full origin-left scale-x-0 bg-gradient-to-r from-brand-700 via-brand to-brand-300" />
+      <div ref={bar} className="h-full origin-left scale-x-0 bg-gradient-to-r from-brand via-brand-300 to-gold" />
     </div>
   );
 }

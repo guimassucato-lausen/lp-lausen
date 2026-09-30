@@ -1,18 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #6b46ff;
-  --color-brand-400: #8a6dff;
-  --color-brand-300: #a996ff;
-  --color-brand-700: #4f2fe0;
-  --color-navy: #0f1b2d;
-  --color-navy-800: #13213c;
-  --color-ink: #0a0d12;
-  --color-surface: #0f1115;
-  --color-surface-2: #151922;
-  --color-ice: #e8f6ff;
-  --color-mist: #a8b5cc;
-  --color-slate: #7f8aa0;
+  /* Paleta Lausen — principais */
+  --color-brand: #2d00a5; /* violeta da marca: botões, estados ativos */
+  --color-navy: #1c2339;
+  --color-graphite: #2c3346;
+  --color-steel: #404a66;
+  --color-mist: #c1d8e5; /* texto secundário */
+  --color-frost: #d6edfb;
+  --color-ice: #e8f6ff; /* texto principal */
+  --color-gold: #f5e9a3; /* destaque */
+  --color-cream: #fff7d5;
+  --color-sky: #c6e5ff;
+
+  /* Paleta Lausen — secundárias (degradês) */
+  --color-brand-300: #b7c1f7; /* lavanda: ícones, links, foco */
+  --color-sand: #f2e9dc;
+  --color-pearl: #fffefa;
+  --color-linen: #efe6da;
+  --color-taupe: #847766;
+  --color-stone: #dbd7cb;
+  --color-cocoa: #4d433f;
+  --color-espresso: #231c1a;
+  --color-midnight: #2d3447;
+  --color-ink: #0a112b; /* fundo da página */
+
+  /* aliases de superfície */
+  --color-navy-800: var(--color-midnight);
+  --color-surface: var(--color-navy);
+  --color-surface-2: var(--color-graphite);
+  /* texto de baixa ênfase (derivado de mist + steel, contraste AA sobre ink) */
+  --color-slate: color-mix(in srgb, #c1d8e5 70%, #404a66);
   --color-up: #22c55e;
   --color-down: #ef4444;
 
@@ -57,7 +75,7 @@ body {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--color-brand) 60%, transparent);
+  background: color-mix(in srgb, var(--color-brand) 80%, transparent);
   color: #fff;
 }
 
@@ -96,13 +114,13 @@ html.lenis body {
     font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--color-brand-300);
+    color: var(--color-gold);
   }
   .eyebrow::before {
     content: "";
     width: 1.5rem;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-brand-300));
+    background: linear-gradient(90deg, transparent, var(--color-gold));
   }
 
   .h-display {
@@ -114,7 +132,7 @@ html.lenis body {
 
   .text-gradient,
   .text-gradient * {
-    background: linear-gradient(100deg, #fff 0%, var(--color-brand-300) 45%, var(--color-brand) 100%);
+    background: linear-gradient(100deg, #ffffff 0%, var(--color-frost) 30%, var(--color-brand-300) 62%, var(--color-gold) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -158,7 +176,7 @@ html.lenis body {
     z-index: -1;
     opacity: 0;
     transition: opacity 0.4s;
-    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgb(107 70 255 / 0.22), transparent 45%);
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgb(183 193 247 / 0.14), transparent 45%);
   }
   .spotlight:hover::before {
     opacity: 1;
@@ -193,7 +211,7 @@ html.lenis body {
 }
 @keyframes ticket-dot {
   0%, 8% { background: transparent; border-color: rgb(255 255 255 / 0.15); color: transparent; }
-  15%, 85% { background: var(--color-brand); border-color: var(--color-brand); color: #fff; box-shadow: 0 0 16px rgb(107 70 255 / 0.7); }
+  15%, 85% { background: var(--color-brand); border-color: var(--color-brand-300); color: #fff; box-shadow: 0 0 16px rgb(183 193 247 / 0.45); }
   100% { background: transparent; border-color: rgb(255 255 255 / 0.15); color: transparent; }
 }
 .ticket-step {
