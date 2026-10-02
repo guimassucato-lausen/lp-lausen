@@ -25,14 +25,14 @@
     "ctaPrimary": "Criar conta grátis",
     "ctaSecondary": "Solicitar cotação",
     "badge1": "Liquidação em < 5 min",
-    "badge2": "KYB em até 24h",
+    "badge2": "Onboarding em até 24h",
     "badge3": "Sem taxa de manutenção",
     "scroll": "Role para explorar",
     "cardPair": "Dólar digital",
     "cardOrder": "Ordem OTC",
     "cardSettled": "Liquidada",
-    "cardKyb": "KYB verificado",
-    "cardKybSub": "Compliance aprovado",
+    "cardKyb": "Empresa verificada",
+    "cardKybSub": "Cadastro aprovado",
     "cardRails": "PIX · On-chain",
     "cardRailsSub": "Trilhos de liquidação"
   },
@@ -40,7 +40,7 @@
     "Liquidação instantânea",
     "Mesa OTC dedicada",
     "PSAV · Res. BCB nº 520",
-    "KYC/KYB completo",
+    "Liquidez sob demanda",
     "Rastreabilidade on-chain",
     "Operação B2B",
     "Spread competitivo",
@@ -60,7 +60,7 @@
         "value": 24,
         "prefix": "",
         "suffix": "h",
-        "label": "para concluir o onboarding corporativo com KYB/KYC"
+        "label": "para concluir o onboarding da sua empresa"
       },
       {
         "value": 0,
@@ -117,7 +117,7 @@
       },
       {
         "title": "Compliance robusto",
-        "desc": "KYC/KYB completo, monitoramento de transações e relatórios para suas áreas fiscal e jurídica."
+        "desc": "Verificação KYC/KYB, monitoramento de transações e relatórios para suas áreas fiscal e jurídica."
       },
       {
         "title": "Operação B2B",
@@ -131,7 +131,7 @@
     "steps": [
       {
         "title": "Onboarding corporativo",
-        "desc": "Cadastro da empresa com KYB/KYC completo em até 24h. Sem burocracia desnecessária, com acompanhamento do nosso compliance."
+        "desc": "Cadastro da sua empresa em até 24h, sem burocracia desnecessária e com acompanhamento da nossa equipe."
       },
       {
         "title": "Solicitação de cotação",
@@ -185,8 +185,8 @@
         "desc": "Estrutura operacional e de governança alinhada ao novo marco regulatório."
       },
       {
-        "title": "KYC/KYB e PLD/FT",
-        "desc": "Análise de perfil, verificação PEP e sanções, e monitoramento contínuo de transações."
+        "title": "PLD/FT",
+        "desc": "Prevenção à lavagem de dinheiro, checagem de sanções e monitoramento contínuo de transações."
       },
       {
         "title": "2FA obrigatório",
@@ -208,7 +208,7 @@
       },
       {
         "q": "Quem pode operar com a Lausen?",
-        "a": "Empresas (PJ) e pessoas físicas (PF) que concluam nosso onboarding com KYB/KYC. Atendemos importadores, exportadores, tesourarias, gestoras e parceiros institucionais."
+        "a": "Empresas (PJ) e pessoas físicas (PF) com cadastro aprovado. Atendemos importadores, exportadores, tesourarias, gestoras e parceiros institucionais."
       },
       {
         "q": "Quanto tempo leva o cadastro?",

@@ -25,14 +25,14 @@
     "ctaPrimary": "Open a free account",
     "ctaSecondary": "Request a quote",
     "badge1": "Settlement in < 5 min",
-    "badge2": "KYB within 24h",
+    "badge2": "Onboarding within 24h",
     "badge3": "No maintenance fees",
     "scroll": "Scroll to explore",
     "cardPair": "Digital dollar",
     "cardOrder": "OTC order",
     "cardSettled": "Settled",
-    "cardKyb": "KYB verified",
-    "cardKybSub": "Compliance approved",
+    "cardKyb": "Company verified",
+    "cardKybSub": "Account approved",
     "cardRails": "PIX · On-chain",
     "cardRailsSub": "Settlement rails"
   },
@@ -40,7 +40,7 @@
     "Instant settlement",
     "Dedicated OTC desk",
     "VASP · BCB Res. No. 520",
-    "Full KYC/KYB",
+    "On-demand liquidity",
     "On-chain traceability",
     "B2B operations",
     "Competitive spreads",
@@ -60,7 +60,7 @@
         "value": 24,
         "prefix": "",
         "suffix": "h",
-        "label": "to complete corporate onboarding with KYB/KYC"
+        "label": "to complete your company's onboarding"
       },
       {
         "value": 0,
@@ -117,7 +117,7 @@
       },
       {
         "title": "Robust compliance",
-        "desc": "Full KYC/KYB, transaction monitoring and reports for your tax and legal teams."
+        "desc": "KYC/KYB verification, transaction monitoring and reports for your tax and legal teams."
       },
       {
         "title": "B2B operations",
@@ -131,7 +131,7 @@
     "steps": [
       {
         "title": "Corporate onboarding",
-        "desc": "Company registration with full KYB/KYC within 24h. No unnecessary red tape, with support from our compliance team."
+        "desc": "Your company is onboarded within 24h, with no unnecessary red tape and support from our team."
       },
       {
         "title": "Quote request",
@@ -185,8 +185,8 @@
         "desc": "Operational and governance structure aligned with the new regulatory framework."
       },
       {
-        "title": "KYC/KYB and AML/CFT",
-        "desc": "Profile analysis, PEP and sanctions screening, and continuous transaction monitoring."
+        "title": "AML/CFT",
+        "desc": "Anti-money laundering controls, sanctions screening and continuous transaction monitoring."
       },
       {
         "title": "Mandatory 2FA",
@@ -208,7 +208,7 @@
       },
       {
         "q": "Who can trade with Lausen?",
-        "a": "Companies and individuals who complete our KYB/KYC onboarding. We serve importers, exporters, treasuries, asset managers and institutional partners."
+        "a": "Companies and individuals with an approved account. We serve importers, exporters, treasuries, asset managers and institutional partners."
       },
       {
         "q": "How long does onboarding take?",
